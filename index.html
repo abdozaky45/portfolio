@@ -924,9 +924,11 @@
     .hero { padding-top: 100px; min-height: auto; padding-bottom: 40px; }
     .hero-tag { font-size: 0.8rem; margin-bottom: 18px; }
     .hero h1 {
-      font-size: clamp(2.2rem, 11vw, 3.2rem);
-      line-height: 1.05;
+      font-size: clamp(1.75rem, 7.5vw, 2.6rem);
+      line-height: 1.08;
       margin-bottom: 14px;
+      word-break: keep-all;
+      overflow-wrap: normal;
     }
     .hero-title { font-size: 1rem; margin-bottom: 20px; }
     .hero p.bio { font-size: 0.95rem; margin-bottom: 26px; }
@@ -983,7 +985,7 @@
   }
 
   @media (max-width: 380px) {
-    .hero h1 { font-size: 2rem; }
+    .hero h1 { font-size: clamp(1.55rem, 7vw, 1.9rem); }
     .hero-meta { flex-direction: column; gap: 10px; align-items: flex-start; }
     .logo { font-size: 1rem; padding: 5px 10px; }
     .section-title { font-size: 1.55rem; }
